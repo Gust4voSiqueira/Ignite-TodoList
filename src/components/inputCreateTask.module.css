@@ -1,0 +1,65 @@
+.formCreateTask {
+    margin-top: -22rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formCreateTask input {
+    background-color: var(--gray-500);
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 93%;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.formCreateTask input:focus {
+    outline: 0;
+}
+
+.formCreateTask button {
+    color: var(--white);
+    font-size: 1.6rem;
+
+    border-radius: 5px;
+    background-color: var(--blue-700);
+    padding: 15px;
+    font-weight: bold;
+
+    transition: 0.2s;
+
+    display: inline-flex;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formCreateTask button:disabled {
+    cursor: not-allowed;
+}
+
+.formCreateTask button:not(:disabled):hover {
+    cursor: pointer;
+    background-color: var(--blue-800);
+}
+
+@media(max-width: 768px) {
+    .formCreateTask {
+        margin-top: -5rem;
+    }
+
+    .formCreateTask input {
+        padding: 5px 10px;
+        font-size: 1.3rem;
+    }
+
+    .formCreateTask button {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 1.3rem;
+        width: 20%;
+        padding: 10px 3px;
+    }
+}

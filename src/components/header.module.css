@@ -1,0 +1,9 @@
+.headerContainer {
+    height: 20rem;
+    background: var(--gray-700);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

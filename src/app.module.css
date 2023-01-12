@@ -1,0 +1,80 @@
+.homeContainer {
+    min-height: 80vh;
+    padding: 20rem 50rem;
+
+    background-color: var(--gray-600);
+}
+
+.homeContainer .tasksCount {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 5rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-500);
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.homeContainer .tasksCount span:nth-child(1n) {
+    color: var(--blue-700);
+}
+
+.homeContainer .tasksCount span:nth-child(2){
+    color: var(--purple-600);
+}
+
+.homeContainer span .count {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--gray-400);
+    color: var(--white);
+}
+
+.homeContainer .tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 0;
+    width: 100%;
+
+    color: var(--white);
+}
+
+.homeContainer .tasks img {
+    width: 100px;
+}
+
+.homeContainer .tasks span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: var(--gray-300);
+}
+
+.homeContainer .tasks p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    color: var(--gray-300);
+}
+
+@media(max-width: 768px) {
+    .homeContainer {
+        padding: 0 1rem;
+    }
+
+    .homeContainer .tasksCount {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 3.5rem;
+        padding-bottom: 0;
+    }
+
+    .homeContainer .tasksCount span:nth-child(1n) {
+        margin-bottom: 20px;
+    }
+}
