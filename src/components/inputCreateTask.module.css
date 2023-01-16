@@ -52,7 +52,6 @@
     .formCreateTask input {
         padding: 5px 10px;
         font-size: 1.3rem;
-        touch-action: none;
     }
 
     .formCreateTask button {
