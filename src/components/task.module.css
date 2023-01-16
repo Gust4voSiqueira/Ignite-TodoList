@@ -60,6 +60,7 @@
     color: var(--white);
     font-size: 1.5rem;
     margin-top: 0;
+    
     text-decoration: line-through;
     color: var(--gray-400);
 }
@@ -71,6 +72,10 @@
 
 @media(max-width: 768px) {
     .taskContainer p.taskContent {
+        width: 75%;
+    }
+    
+    .taskContainer p.completedTaskContent {
         width: 75%;
     }
 }
